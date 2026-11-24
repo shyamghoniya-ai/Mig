@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HT0ZGWRP02"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HT0ZGWRP02');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7fafd">
+  <meta name="description" content="Explore photos of Maruti Interior Gallery in Junagadh.">
+  <link rel="icon" type="image/png" href="images/favicon-maruti-logo.png?v=2">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon-maruti-logo.png?v=2">
+  <meta property="og:image" content="images/maruti-interior-gallery-logo-new.jpg?v=2">
+  <meta name="twitter:image" content="images/maruti-interior-gallery-logo-new.jpg?v=2">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Maruti Interior Gallery","logo":"images/maruti-interior-gallery-logo-new.jpg?v=2"}</script>
+  <title>Showroom Gallery | Maruti Interior Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #142d4a;
+      --muted: #52677f;
+      --paper: #f7fafd;
+      --white: #ffffff;
+      --burgundy: #173d63;
+      --line: rgba(25, 64, 99, .15);
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { min-height: 100vh; margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1000px, calc(100% - 48px)); margin-inline: auto; }
+    .site-header { border-bottom: 1px solid var(--line); }
+    .header-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; }
+    .brand img { width: auto; height: 52px; max-width: 52px; border-radius: 12px; object-fit: contain; }
+    .brand-name { font: 600 14px var(--serif); letter-spacing: .025em; }
+    .brand-name small { display: block; margin-top: 4px; color: var(--muted); font: 600 8px var(--sans); letter-spacing: .18em; text-transform: uppercase; }
+    .back-link { color: var(--burgundy); font-size: 11px; font-weight: 700; letter-spacing: .06em; }
+    main { padding: 74px 0 100px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--burgundy); font-size: 10px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+    .eyebrow::before { width: 22px; height: 1px; background: #2876a6; content: ""; }
+    h1 { max-width: 720px; margin: 16px 0 12px; color: var(--burgundy); font: 500 clamp(40px, 6vw, 68px)/1.05 var(--serif); letter-spacing: -.04em; }
+    .intro { max-width: 550px; margin: 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
+    .photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); align-items: start; gap: 22px; margin-top: 38px; }
+    .photo-card { overflow: hidden; border-radius: 18px; background: var(--white); }
+    .photo-card a { display: block; }
+    .photo-card img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; transition: transform .35s; }
+    .photo-card a:hover img { transform: scale(1.025); }
+    .photo-caption { padding: 16px 19px 19px; }
+    .photo-caption h2 { margin: 0; font: 500 21px var(--serif); }
+    .photo-caption p { display: -webkit-box; overflow: hidden; margin: 6px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
+    .coming-soon { margin-top: 28px; padding: 19px 22px; border: 1px solid var(--line); color: var(--muted); font-size: 12px; line-height: 1.8; }
+    .photo-viewer { position: fixed; z-index: 30; inset: 0; display: none; place-items: center; padding: 24px; background: rgba(24,25,21,.84); }
+    .photo-viewer.open { display: grid; }
+    .photo-viewer img { display: block; width: auto; height: auto; max-width: 100%; max-height: calc(100vh - 48px); border-radius: 18px; object-fit: contain; }
+    .photo-viewer-close { position: fixed; z-index: 1; top: 20px; right: 20px; width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.6); border-radius: 50%; background: var(--white); color: var(--ink); font-size: 26px; line-height: 1; cursor: pointer; }
+    .photo-viewer-close:hover { background: var(--burgundy); color: white; }
+    .photo-viewer-close:focus-visible { outline: 2px solid white; outline-offset: 3px; }
+    .back-to-top { position: fixed; z-index: 20; right: 22px; bottom: 22px; width: 46px; height: 46px; display: grid; place-items: center; border: 0; border-radius: 0; background: var(--burgundy); color: white; font-size: 22px; cursor: pointer; opacity: 0; pointer-events: none; transform: translateY(8px); transition: opacity .2s, transform .2s, background .2s; }
+    .back-to-top.visible { opacity: 1; pointer-events: auto; transform: none; }
+    .back-to-top:hover { background: #2876a6; }
+    .back-to-top:focus-visible { outline: 2px solid var(--burgundy); outline-offset: 3px; }
+    @media (max-width: 1024px) {
+      .photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 640px) {
+      .container { width: calc(100% - 38px); }
+      .header-inner { min-height: 68px; }
+      .brand img { width: auto; height: 44px; max-width: 44px; object-fit: contain; }
+      .brand-name { font-size: 12px; }
+      .back-link { font-size: 10px; }
+      main { padding: 55px 0 72px; }
+      .photo-grid { grid-template-columns: 1fr; gap: 15px; margin-top: 28px; }
+      .photo-viewer { padding: 16px; }
+      .photo-viewer img { max-height: calc(100vh - 32px); }
+      .photo-viewer-close { top: 12px; right: 12px; }
+      .back-to-top { right: 16px; bottom: 16px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .back-to-top { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#home" aria-label="Maruti Interior Gallery home">
+        <img src="images/maruti-interior-gallery-logo-new.jpg?v=2" alt="Maruti Interior Gallery logo" width="1179" height="965">
+        <span class="brand-name">Maruti Interior Gallery<small>Hardware · Junagadh</small></span>
+      </a>
+      <a class="back-link" href="index.html#home">← Back to home</a>
+    </div>
+  </header>
+  <main class="container">
+    <span class="eyebrow">Inside our showroom</span>
+    <h1>Explore the gallery.</h1>
+    <p class="intro">Take a look around Maruti Interior Gallery in Junagadh. More showroom photos can be added here as they are shared.</p>
+    <div class="photo-grid">
+      <article class="photo-card">
+        <a href="images/migpic3.jpg" aria-label="Open the storefront photo at full size">
+          <img src="images/migpic3.jpg" alt="Maruti Interior Gallery storefront decorated with blue and white balloons" width="2000" height="1333" loading="lazy">
+        </a>
+        <div class="photo-caption">
+          <h2>Our storefront</h2>
+          <p>Maruti Interior Gallery · Junagadh</p>
+        </div>
+      </article>
+      <article class="photo-card">
+        <a href="images/showroom-interior-2026-10-08.jpeg" aria-label="Open the kitchen display photo at full size">
+          <img src="images/showroom-interior-2026-10-08.jpeg" alt="Kitchen display at Maruti Interior Gallery with modern cabinets, lighting, cooktops and accessories" width="1280" height="577" loading="lazy">
+        </a>
+        <div class="photo-caption">
+          <h2>Kitchen display</h2>
+          <p>Explore modern kitchen cabinets, lighting and hardware details.</p>
+        </div>
+      </article>
+      <article class="photo-card">
+        <a href="images/showroom-display-2026-10-08-2.jpeg" aria-label="Open the full kitchen showroom photo">
+          <img src="images/showroom-display-2026-10-08-2.jpeg" alt="Wide view of the kitchen showroom with display cabinets, appliances, lighting and a central island" width="1280" height="577" loading="lazy">
+        </a>
+        <div class="photo-caption">
+          <h2>Kitchen showroom</h2>
+          <p>A wide view of the kitchen displays and central island.</p>
+        </div>
+      </article>
+      <article class="photo-card">
+        <a href="images/showroom-photo-2026-10-08-3.jpeg" aria-label="Open the safes and hardware display photo at full size">
+          <img src="images/showroom-photo-2026-10-08-3.jpeg" alt="Display of home safes and cabinet handles at Maruti Interior Gallery" width="519" height="1152" loading="lazy">
+        </a>
+        <div class="photo-caption">
+          <h2>Safes &amp; hardware</h2>
+          <p>Explore the safe and cabinet-hardware display.</p>
+        </div>
+      </article>
+      <article class="photo-card">
+        <a href="images/showroom-photo-2026-10-08-4.jpeg" aria-label="Open the kitchen appliances display photo at full size">
+          <img src="images/showroom-photo-2026-10-08-4.jpeg" alt="Kitchen showroom display of chimneys, cooktops and cabinets at Maruti Interior Gallery" width="1280" height="577" loading="lazy">
+        </a>
+        <div class="photo-caption">
+          <h2>Kitchen appliances</h2>
+          <p>Explore the chimney, cooktop and cabinet displays.</p>
+        </div>
+      </article>
+      <article class="photo-card">
+        <a href="images/migpic4.jpg" aria-label="Open the hardware display photo at full size">
+          <img src="images/migpic4.jpg" alt="Wall display of cabinet handles and hardware at Maruti Interior Gallery" width="2000" height="1333" loading="lazy">
+        </a>
+        <div class="photo-caption">
+          <h2>Hardware collection</h2>
+          <p>Explore cabinet handles, locks and finishing details.</p>
+        </div>
+      </article>
+      <article class="photo-card">
+        <a href="images/migpic.jpg" aria-label="Open the modern kitchen display photo at full size">
+          <img src="images/migpic.jpg" alt="Modern kitchen display with gray and yellow cabinets, cooktops and illuminated counters" width="1152" height="864" loading="lazy">
+        </a>
+        <div class="photo-caption">
+          <h2>Modern kitchen display</h2>
+          <p>A contemporary kitchen with clean lines and warm lighting.</p>
+        </div>
+      </article>
+      <article class="photo-card">
+        <a href="images/security-lock-display-2026-10-08.jpeg" aria-label="Open the digital lock display photo at full size">
+          <img src="images/security-lock-display-2026-10-08.jpeg" alt="Digital lock display at Maruti Interior Gallery with multiple smart lock models on glass shelves" width="519" height="1152" loading="lazy">
+        </a>
+        <div class="photo-caption">
+          <h2>Digital lock display</h2>
+          <p>Showcasing smart security solutions and lock finishes.</p>
+        </div>
+      </article>
+      <article class="photo-card">
+        <a href="images/kitchen-storage-display-2026-10-08.jpeg" aria-label="Open the kitchen storage display photo at full size">
+          <img src="images/kitchen-storage-display-2026-10-08.jpeg" alt="Kitchen storage display with modern pull-out drawer organizers and cabinetry at Maruti Interior Gallery" width="577" height="1280" loading="lazy">
+        </a>
+        <div class="photo-caption">
+          <h2>Storage display</h2>
+          <p>Pull-out storage solutions and organized kitchen accessories.</p>
+        </div>
+      </article>
+      <article class="photo-card">
+        <a href="images/rim-panel-display-2026-10-08.jpeg" aria-label="Open the rim panel display photo at full size">
+          <img src="images/rim-panel-display-2026-10-08.jpeg" alt="Rim panel and decorative handle display at Maruti Interior Gallery" width="577" height="1280" loading="lazy">
+        </a>
+        <div class="photo-caption">
+          <h2>Rim panel display</h2>
+          <p>Decorative panel details and premium finishing options.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+  <div class="photo-viewer" id="photo-viewer" role="dialog" aria-modal="true" aria-label="Full-size showroom photo" aria-hidden="true">
+    <button class="photo-viewer-close" type="button" aria-label="Close photo">×</button>
+    <img src="" alt="">
+  </div>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
+  <script>
+    const photoViewer = document.querySelector("#photo-viewer");
+    const viewerImage = photoViewer.querySelector("img");
+    const viewerClose = photoViewer.querySelector(".photo-viewer-close");
+    const backToTop = document.querySelector("#back-to-top");
+    let previousPhotoLink;
+
+    function updateBackToTop() {
+      backToTop.classList.toggle("visible", window.scrollY > 320);
+    }
+
+    function closePhotoViewer() {
+      photoViewer.classList.remove("open");
+      photoViewer.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      viewerImage.removeAttribute("src");
+      if (previousPhotoLink) previousPhotoLink.focus();
+    }
+
+    document.querySelectorAll(".photo-card a").forEach(link => {
+      link.addEventListener("click", event => {
+        event.preventDefault();
+        previousPhotoLink = link;
+        const thumbnail = link.querySelector("img");
+        viewerImage.src = link.href;
+        viewerImage.alt = thumbnail.alt;
+        photoViewer.classList.add("open");
+        photoViewer.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+        viewerClose.focus();
+      });
+    });
+
+    viewerClose.addEventListener("click", closePhotoViewer);
+    photoViewer.addEventListener("click", event => {
+      if (event.target === photoViewer) closePhotoViewer();
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && photoViewer.classList.contains("open")) closePhotoViewer();
+    });
+    window.addEventListener("scroll", updateBackToTop, { passive: true });
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
+    });
+    updateBackToTop();
+  </script>
+</body>
+</html>
